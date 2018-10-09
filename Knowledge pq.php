@@ -39,7 +39,7 @@ function reply_msg($txtback,$replyToken)//สร้างข้อความ�
 			$query = mysqli_query($conn,$sqltext);
 			while($obj = mysqli_fetch_array($query))
 			{
-				$txtback = "The result is".$obj["link"];
+				$txtback = "The result is ".$obj["link"];
 				reply_msg($txtback,$replyToken);
 			}
 			
