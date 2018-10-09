@@ -35,7 +35,7 @@ if(isset($keyword))
     <div class="w3-container w3-lime">
         <div class="w3-row">
             <div class="w3-col w3-container l12 w3-center">  
-                <h4>PEA SMART QUERY V.2</h4>
+                <h4>PEAS1 PQ Library</h4>
             </div>
         </div>
     </div>
