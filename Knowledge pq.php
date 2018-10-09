@@ -1,6 +1,6 @@
 <?php
-ffunction reply_msg($txtback,$replyToken)//สร้างข้อความและตอบกลับ
-{{
+function reply_msg($txtback,$replyToken)//สร้างข้อความและตอบกลับ
+{
     $access_token = 'SgKsNCJ/CFULSBsNU2+N6Oam+5+Jzqhi6P1AHTUlEOw6L8VFkGeU1MwdogFs3s+6lV1gYE6OqsX+CIxwSbbuXZcRbym0o6GeudnHDFqQa1WLoHWx0Z+FDUEojVK8kJ/ZQZnDvXh7h5m1jnN31epjRQdB04t89/1O/w1cDnyilFU=';//เอามาจาก linedev ตรง channel access setting
     $messages = ['type' => 'text','text' => $txtback];//สร้างตัวแปร 
     $url = 'https://api.line.me/v2/bot/message/reply';
@@ -19,7 +19,7 @@ ffunction reply_msg($txtback,$replyToken)//สร้างข้อความ�
     $result = curl_exec($ch);
     curl_close($ch);
     echo $result . "\r\n";
-}}
+}
 	$content = file_get_contents('php://input');//ประกาศตัวแปรชื่อ content เพื่อรับข้อมูลจากข้อความที่พิมพ์ในไลน์มาเก็บที่ตัวแปร content
 	$events = json_decode($content, true);//แปลง json เป็น php ข้อมูลที่ส่งมาจากไลน์มาเป็น json มาแปลงเป็น php แล้วเก็บข้อมูลในตัวแปร events
 	if (!is_null($events['events'])) //check ค่าในตัวแปร $events ที่ส่งมาจากไลน์ ใส่เครื่อง ! แปลว่าตรงกันข้าม คือถ้าข้อความมาจากไลน์ ให้ทำงานตามบรรทัดด้านล่าง
