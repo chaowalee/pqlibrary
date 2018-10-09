@@ -50,9 +50,9 @@ if(isset($keyword))
                     {
                         echo '<a href="'.$objsearch["link"].'" class="list-group-item list-group-item-action">';
                         echo $a.".<br>";
-                        echo "keyword".$objsearch["keyword"]."<br>";
-                        echo "type".$objsearch["type"]."<br>";
-                        echo "link".$objsearch["link"];
+                        echo "Category" .$objsearch["keyword"]."<br>";
+                        echo "Type" .$objsearch["type"]."<br>";
+                        echo "Link" .$objsearch["link"];
                         echo '</a>';
                         $a=$a+1;
                     }
