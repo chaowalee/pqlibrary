@@ -10,4 +10,10 @@
     }
     mysqli_query($conn, "SET NAMES utf8");
 	echo "connected !!!!!!"; //ถ้าเชื่อมต่อสำเร็จให้แสดงผล connect
+	$sql_text = "SELECT * FROM librarypq";//select* หมายถึงเลือกทั้งตาราง 
+	$query = mysqli_query($conn,$sql_text);
+	while($obj = mysqli_fetch_array($query))//เป็นการคลี่ข้อมูลออกมาที่ละช่อง
+	{
+		echo $obj["index"];
+	}
  ?>
