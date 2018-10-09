@@ -35,13 +35,11 @@ function reply_msg($txtback,$replyToken)//สร้างข้อความ�
 			{
 			$replyToken = $event['replyToken']; //ประกาศตัวแปร replyToken เก็บ reply token ที่ไลน์ event ส่งมาในทุกครั้งอะ เอาไว้ใสตัวแปรที่ประกาศ เพื่อเอาไว้ให้ตอบกลับ
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ที่ผ่านการตรวจสอบบรรทัดที่ 29 มาเก็บในตัวแปร $txtin
-			$sqltext = "SELECT * FROM librarypq WHERE keyword = '".$txtin."'";
+			$sqltext = "SELECT * FROM librarypq WHERE keyword LIKE '%".$txtin."%'";
 			$query = mysqli_query($conn,$sqltext);
-			while($obj = mysqli_fetch_array($query))
-			{
-				$txtback = "The result is ".$obj["link"];
+			$num_rows = mysqli_num_rows($query);
+			$txtback = "All results".$num_rows." items https://pqlibrary.herokuapp.com/result.php?keyword=".$txtin;
 				reply_msg($txtback,$replyToken);
-			}
 			
 			}
 		}
