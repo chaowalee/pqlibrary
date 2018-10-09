@@ -32,7 +32,7 @@ ffunction reply_msg($txtback,$replyToken)//สร้างข้อความ�
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ที่ผ่านการตรวจสอบบรรทัดที่ 8 มาเก็บในตัวแปร $txtin
             if($txtin == "hibot")
 			{
-				$txtback = "hihumen"
+				$txtback = "hihumen";
 				reply_msg($txtback,$replyToken);
 			}
 		}
