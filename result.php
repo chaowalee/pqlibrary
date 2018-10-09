@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0," charset="utf-8">
-<title>PSQ V.2</title>
+<title>PQ PEAS1</title>
 <!-- css -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -35,7 +35,7 @@ if(isset($keyword))
     <div class="w3-container w3-lime">
         <div class="w3-row">
             <div class="w3-col w3-container l12 w3-center">  
-                <h4>PEAS1 PQ Library</h4>
+                <h4>PEAS1 : PQ Library</h4>
             </div>
         </div>
     </div>
