@@ -1,4 +1,9 @@
 <?php
+	$server = "us-cdbr-iron-east-01.cleardb.net";
+    $username = "b21e535520af4b";
+    $password = "402bbf1f";
+    $db = "heroku_821969a41e3a17e";
+    $conn = new mysqli($server, $username, $password, $db);
 function reply_msg($txtback,$replyToken)//สร้างข้อความและตอบกลับ
 {
     $access_token = 'SgKsNCJ/CFULSBsNU2+N6Oam+5+Jzqhi6P1AHTUlEOw6L8VFkGeU1MwdogFs3s+6lV1gYE6OqsX+CIxwSbbuXZcRbym0o6GeudnHDFqQa1WLoHWx0Z+FDUEojVK8kJ/ZQZnDvXh7h5m1jnN31epjRQdB04t89/1O/w1cDnyilFU=';//เอามาจาก linedev ตรง channel access setting
