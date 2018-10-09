@@ -35,6 +35,7 @@ ffunction reply_msg($txtback,$replyToken)//สร้างข้อความ�
 				$txtback = "hihumen";
 				reply_msg($txtback,$replyToken);
 			}
+			}
 		}
 	}
 	?>
