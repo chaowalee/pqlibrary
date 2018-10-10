@@ -26,8 +26,22 @@
 			</div>
 			<div class ="container"><!container ไม่มีคำว่า fluid คือสีจะไม่เต็ม row>
 				<div class="row">
-					<div class="col-lg-2" style="background-color:yellow;">
-						<h6>Coll</h6><!h4 คือขนาดตัวอักษร ใหญ่ เล็ก มี h1-6 1 ใหญ่สุด>
+					<div class="col-lg-2" style="background-color:yellow;"><! lg คือ bootstrap ที่ใช้กับ laptop แต่ถ้าจะเขียน app ในมือถือ ใช้ xs>
+						<div class="row">
+							<label for="name">Category :</label>
+							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
+						</div>
+						<div class="row">
+							<label for="name">Type :</label>
+							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
+						</div>
+						<div class="row">
+							<label for="name">Link :</label>
+							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
+						</div>
+						<div class="row">
+							<input class="btn btn-success btn-block" type="submit">
+						</div>
 					</div>
 					<div class="col-lg-10" style="background-color:blue;">
 						<h6>Col2</h6>
