@@ -27,24 +27,37 @@
 			<div class ="container"><!container ไม่มีคำว่า fluid คือสีจะไม่เต็ม row>
 				<div class="row">
 					<div class="col-lg-2" style="background-color:yellow;"><! lg คือ bootstrap ที่ใช้กับ laptop แต่ถ้าจะเขียน app ในมือถือ ใช้ xs>
-						<div class="mr-1 row">
+						<div class="row">
 							<label for="name">Category :</label>
 							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
 						</div>
-						<div class="mr-1 row">
+						<div class="row">
 							<label for="name">Type :</label>
 							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
 						</div>
-						<div class="mr-1 row">
+						<div class="row">
 							<label for="name">Link :</label>
 							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
 						</div>
-						<div class="mt-2 mr-1 row"><! mt-2 คือ margin top เป็นการเว้นช่องด้านบน ได้มากสุด 5 >
+						<div class="mt-2 row"><! mt-2 คือ margin top เป็นการเว้นช่องด้านบน ได้มากสุด 5 >
 							<input class="btn btn-success btn-block" type="submit" value="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
 						</div>
 					</div>
-					<div class="col-lg-10" style="background-color:blue;">
-						<h6>Col2</h6>
+					<div class="col-lg-10" style="background-color:pastel purple;">
+						<div class="table-responsive"><!เป็นรุปแบบตารางในเวป w3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>ชื่อ</th> <!หัวตาราง>
+									<th>นามสกุล</th>
+									<th>email</th>
+								</tr>
+							</thead>
+							<tbody>
+								<td>111</td><!ข้อมูลในตาราง >
+							</tbody>
+						</table>
+					</div>
 					</div>
 				</div>
 			</div>
