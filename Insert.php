@@ -15,6 +15,14 @@
 				text-align:center;<!การสั่งให้ตัวแปร row-center มีข้อความข้างในอยู่กลางคอลัมน์>
 			}
 		</style>
+		<?php
+			$server = "us-cdbr-iron-east-01.cleardb.net";
+			$username = "b21e535520af4b";
+			$password = "402bbf1f";
+			$db = "heroku_821969a41e3a17e";
+			$conn = new mysqli($server, $username, $password, $db);
+			mysqli_query($conn, "SET NAMES utf8");
+		?>
 	</head>
 		<body>
 			<div class ="container-fluid" style="background-color:purple;"><!container มันคือพารากราฟใน 1 กล่อง สามารถแบ่งแถวและคอลัมน์ได้>
@@ -43,10 +51,9 @@
 							<input class="btn btn-success btn-block" type="submit" value="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
 						</div>
 					</div>
-					<div class="col-lg-10" style="background-color:pastel purple;">
+					<div class="col-lg-10" style="background-color:blue;">
 						<div class="table-responsive"><!เป็นรุปแบบตารางในเวป w3>
 						<table class="table">
-						 <thead class="thead-dark">
 							<thead>
 								<tr>
 									<th>ชื่อ</th> <!หัวตาราง>
@@ -55,7 +62,18 @@
 								</tr>
 							</thead>
 							<tbody>
-								<td>111</td><!ข้อมูลในตาราง >
+								<?php
+									$sql = "SELECT * FROM librarypq";
+									$query = mysqli_query($conn,$sql);
+									while($obj = mysqli_fetch_array($query))
+									{
+										echo "<tr>";
+										echo "<td>".$obj["keyword"]."</td>";
+										echo "<td>".$obj["type"]."</td>";
+										echo "<td>".$obj["link"]."</td>";
+										echo "</tr>";
+									}
+								?>
 							</tbody>
 						</table>
 					</div>
