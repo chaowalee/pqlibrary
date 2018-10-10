@@ -24,13 +24,13 @@
 					</div>
 				</div>
 			</div>
-			<div class ="container">
+			<div class ="container"><!container ไม่มีคำว่า fluid คือสีจะไม่เต็ม row>
 				<div class="row">
 					<div class="col-lg-2" style="background-color:yellow;">
-						<h4>Coll</h4><!h4 คือขนาดตัวอักษร ใหญ่ เล็ก มี h1-6 1 ใหญ่สุด>
+						<h6>Coll</h6><!h4 คือขนาดตัวอักษร ใหญ่ เล็ก มี h1-6 1 ใหญ่สุด>
 					</div>
 					<div class="col-lg-10" style="background-color:blue;">
-						<h4>Col2</h4>
+						<h6>Col2</h6>
 					</div>
 				</div>
 			</div>
