@@ -12,10 +12,11 @@
 		<style type="text/css">
 	</head>
 		<body>
-		<div class ="container-fluid" style="background-color:purple pastel;">
-		<div class="row row-center">
-				<div class="col-lg-4 offset-lg-4" style="background-color:pink;">
-					<h4>บันทึกข้อมูล</h4>
+			<div class ="container-fluid" style="background-color:purple;">
+				<div class="row row-center">
+					<div class="col-lg-4 offset-lg-4" style="background-color:pink;">
+						<h4>บันทึกข้อมูล</h4>
+					</div>
 				</div>
 			</div>
 		</body>
