@@ -39,8 +39,8 @@
 							<label for="name">Link :</label>
 							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
 						</div>
-						<div class="row">
-							<input class="btn btn-success btn-block" type="submit" valve="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
+						<div class="mt-2 row"><! mt-2 คือ margin top เป็นการเว้นช่องด้านบน>
+							<input class="btn btn-success btn-block" type="submit" value="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
 						</div>
 					</div>
 					<div class="col-lg-10" style="background-color:blue;">
