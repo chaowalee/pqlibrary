@@ -46,6 +46,7 @@
 					<div class="col-lg-10" style="background-color:pastel purple;">
 						<div class="table-responsive"><!เป็นรุปแบบตารางในเวป w3>
 						<table class="table">
+						 <thead class="thead-dark">
 							<thead>
 								<tr>
 									<th>ชื่อ</th> <!หัวตาราง>
