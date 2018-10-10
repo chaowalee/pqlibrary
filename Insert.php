@@ -40,7 +40,7 @@
 							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
 						</div>
 						<div class="row">
-							<input class="btn btn-success btn-block" type="submit">
+							<input class="btn btn-success btn-block" type="submit" valve="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
 						</div>
 					</div>
 					<div class="col-lg-10" style="background-color:blue;">
