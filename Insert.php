@@ -51,14 +51,14 @@
 							<input class="btn btn-success btn-block" type="submit" value="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
 						</div>
 					</div>
-					<div class="col-lg-10" style="background-color:blue;">
+					<div class="col-lg-10" style="background-color:yellow;">
 						<div class="table-responsive"><!เป็นรุปแบบตารางในเวป w3>
 						<table class="table">
 							<thead>
 								<tr>
-									<th>ชื่อ</th> <!หัวตาราง>
-									<th>นามสกุล</th>
-									<th>email</th>
+									<th>Category</th> <!หัวตาราง>
+									<th>Type</th>
+									<th>Link</th>
 								</tr>
 							</thead>
 							<tbody>
