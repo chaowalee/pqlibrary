@@ -72,7 +72,7 @@ function flex_msg($keyword)
                 "text": "'.$txtresult.'",
                 "wrap": true,
                 "color": "#666666",
-                "size": "sm",
+                "size": "md",
                 "flex": 5
               }
             ]
