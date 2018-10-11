@@ -38,7 +38,7 @@ function reply_msg($txtback,$replyToken)//สร้างข้อความ�
 			$sqltext = "SELECT * FROM librarypq WHERE keyword LIKE '%".$txtin."%'";
 			$query = mysqli_query($conn,$sqltext);
 			$num_rows = mysqli_num_rows($query);
-			$txtback = "All results ".$num_rows." items https://pqlibrary.herokuapp.com/result.php?keyword=".$txtin;
+			$txtback = "All results ".$num_rows." items line://app/1613340720-yx1KWdPo?keyword=".$txtin;
 				reply_msg($txtback,$replyToken);
 			
 			}
