@@ -33,7 +33,7 @@
 		$query_search = mysqli_query($conn,$sql_search);
 		$objsearch = mysqli_fetch_array($query_search);
 		$link1 = $objsearch["link"];
-		//echo $link1;
+		echo $link1;
 		?>
 		<div class="container">
 			<div class="embed-responsive embed-responsive-210by297">
