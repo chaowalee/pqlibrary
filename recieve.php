@@ -1,4 +1,4 @@
 <?php
-		&keyword = $_POST["keyword"];
+		$keyword = $_POST["keyword"];
 			echo $keyword;
  ?>
