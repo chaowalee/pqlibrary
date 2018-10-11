@@ -23,13 +23,13 @@
 	</head>
 	<body>
 		<?php
-		$link = $_GET["doc.no"];
+		$link = $_GET["doc_no"];
 		$server = "us-cdbr-iron-east-01.cleardb.net";
 		$username = "b21e535520af4b";
 		$password = "402bbf1f";
 		$db = "heroku_821969a41e3a17e";
 		$conn = new mysqli($server, $username, $password, $db);
-		$sql_search ="SELECT * FROM librarypq WHERE doc_no='".$link1."'";
+		$sql_search ="SELECT * FROM librarypq WHERE doc_no='".$link."'";
 		$query_search = mysqli_query($conn,$sql_search);
 		$objsearch = mysqli_fetch_array($query_search);
 		$link1 = $objsearch["link"];
