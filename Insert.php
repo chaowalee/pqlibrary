@@ -40,21 +40,23 @@
 			<div class ="container"><!container ไม่มีคำว่า fluid คือสีจะไม่เต็ม row>
 				<div class="row">
 					<div class="col-lg-2" style="background-color:yellow;"><! lg คือ bootstrap ที่ใช้กับ laptop แต่ถ้าจะเขียน app ในมือถือ ใช้ xs>
+						<form action="recieve.php" method="post"><!เป็นการเลือกให้ action ตรงไหน>
 						<div class="row">
 							<label for="name">Category :</label>
-							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
+							<input class="form-control" type="text" name="keyword"  >
 						</div>
 						<div class="row">
 							<label for="name">Type :</label>
-							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
+							<input class="form-control" type="text" name="type"  >
 						</div>
 						<div class="row">
 							<label for="name">Link :</label>
-							<input class="form-control" type="text" name="name"  placeholder="ใส่ชื่อของคุณ">
+							<input class="form-control" type="text" name="link"  >
 						</div>
 						<div class="mt-2 row"><! mt-2 คือ margin top เป็นการเว้นช่องด้านบน ได้มากสุด 5 >
 							<input class="btn btn-success btn-block" type="submit" value="SAVE"><!btn success คือ code แสดงปุ่มกดสีเขียว ส่วน btn block คือช่องกดเต็มคอลัมน์ >
 						</div>
+						</form>
 					</div>
 					<div class="col-lg-10" style="background-color:yellow;">
 						<div class="table-responsive"><!เป็นรุปแบบตารางในเวป w3>
