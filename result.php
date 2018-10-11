@@ -22,11 +22,10 @@
    {
     font-family: 'Mali', cursive;
    }
- </style>
 
-#container-fluid{
-margin-bottom: 10px;
-}
+	#container-fluid{
+						margin-bottom: 10px;
+					}
 </style>
 </head>
 <body>
