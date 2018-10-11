@@ -25,7 +25,8 @@ margin-bottom: 10px;
     $password = "402bbf1f";
     $db = "heroku_821969a41e3a17e";
     $conn = new mysqli($server, $username, $password, $db);//ประกาศตัวแปร conn เพื่อเชื่อมไปยังฐานข้อมูล เป็นมาตรฐานการเขียนเชื่อมต่อ
-$keyword = $_GET["keyword"];
+	mysqli_query($conn, "SET NAMES utf-8");
+	$keyword = $_GET["keyword"];
 if(isset($keyword))
 {
     $sql_search ="SELECT * FROM librarypq WHERE keyword LIKE '%".$keyword."%'";
