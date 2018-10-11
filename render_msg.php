@@ -93,7 +93,7 @@ function flex_msg($keyword)
         "action": {
           "type": "uri",
           "label": "Click",
-          "uri": "'.$url.'",
+          "uri": "'.$url.'"
         }
       },
      
