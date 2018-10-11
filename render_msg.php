@@ -93,7 +93,7 @@ function flex_msg($keyword)
         "action": {
           "type": "uri",
           "label": "Click",
-          "uri": "https://pqlibrary.herokuapp.com/result.php"
+          "uri": "'.$url.'",
         }
       },
      
