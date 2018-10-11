@@ -39,8 +39,8 @@
 			</div>
 			<div class ="container"><!container ไม่มีคำว่า fluid คือสีจะไม่เต็ม row>
 				<div class="row">
-					<div class="col-lg-2" style="background-color:yellow;"><! lg คือ bootstrap ที่ใช้กับ laptop แต่ถ้าจะเขียน app ในมือถือ ใช้ xs>
-						<form action="recieve.php" method="post"><!เป็นการเลือกให้ action ตรงไหน>
+					<div class="col-lg-2" style="background-color:white;"><! lg คือ bootstrap ที่ใช้กับ laptop แต่ถ้าจะเขียน app ในมือถือ ใช้ xs>
+						<form action="recieve.php" method="post"><!เป็นการเลือกให้ action สิ่งที่พิมพ์ในช่องว่างไปยัง recieve.php>
 						<div class="row">
 							<label for="name">Category :</label>
 							<input class="form-control" type="text" name="keyword"  >
@@ -58,7 +58,7 @@
 						</div>
 						</form>
 					</div>
-					<div class="col-lg-10" style="background-color:yellow;">
+					<div class="col-lg-10" style="background-color:white;">
 						<div class="table-responsive"><!เป็นรุปแบบตารางในเวป w3>
 						<table class="table">
 							<thead>
