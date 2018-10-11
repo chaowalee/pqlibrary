@@ -7,6 +7,7 @@ function flex_msg($keyword)
     $password = "402bbf1f";
     $db = "heroku_821969a41e3a17e";
     $conn = new mysqli($server, $username, $password, $db);
+	
 	$sql_key_search = "SELECT * FROM librarypq WHERE keyword LIKE '%".$keyword."%' OR type LIKE '%".$keyword."%'";
 	$key_query = mysqli_query($conn,$sql_key_search);
     $numrows = mysqli_num_rows($key_query);
@@ -68,7 +69,7 @@ function flex_msg($keyword)
             "contents": [
               {
                 "type": "text",
-                "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
+                "text": "'.$txtresult.'",
                 "wrap": true,
                 "color": "#666666",
                 "size": "sm",
