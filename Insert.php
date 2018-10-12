@@ -42,6 +42,10 @@
 					<div class="col-lg-2" style="background-color:white;"><! lg คือ bootstrap ที่ใช้กับ laptop แต่ถ้าจะเขียน app ในมือถือ ใช้ xs>
 						<form action="recieve.php" method="post"><!เป็นการเลือกให้ action สิ่งที่พิมพ์ในช่องว่างไปยัง recieve.php>
 						<div class="row">
+							<label for="name">Doc_no :</label>
+							<input class="form-control" type="text" name="doc_no"  >
+						</div>
+						<div class="row">
 							<label for="name">Category :</label>
 							<input class="form-control" type="text" name="keyword"  >
 						</div>
@@ -63,6 +67,7 @@
 						<table class="table">
 							<thead>
 								<tr>
+									<th>Doc_no</th>
 									<th>Category</th> <!หัวตาราง>
 									<th>Type</th>
 									<th>Link</th>
@@ -75,6 +80,7 @@
 									while($obj = mysqli_fetch_array($query))
 									{
 										echo "<tr>";
+										echo "<td>".$obj["doc_no"]."</td>";
 										echo "<td>".$obj["keyword"]."</td>";
 										echo "<td>".$obj["type"]."</td>";
 										echo "<td>".$obj["link"]."</td>";
