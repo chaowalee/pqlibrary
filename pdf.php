@@ -44,7 +44,7 @@
 			<div class="row">
 				<div class="col-lg-4 offset-lg-4">
 					<!--<input type="button" class="btn btn-success btn-block" value="back">-->
-					<a href="#" class="btn btn-success btn-block">back</a>
+					<a href="#" class="btn btn-success btn-block" data-rel="back">back</a>
 				</div>
 			</div>
 		</div>
