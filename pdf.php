@@ -24,6 +24,7 @@
 	<body>
 		<?php
 		$link = trim($_GET["docpdf"]);
+		$keyword = $_GET["keyword"];
 		$server = "us-cdbr-iron-east-01.cleardb.net";
 		$username = "b21e535520af4b";
 		$password = "402bbf1f";
@@ -33,7 +34,7 @@
 		$query_search = mysqli_query($conn,$sql_search);
 		$objsearch = mysqli_fetch_array($query_search);
 		$link1 = $objsearch["link"];
-		echo $link1;
+		echo $keyword;
 		?>
 		<div class="container">
 			<div class="embed-responsive embed-responsive-210by297">
@@ -43,8 +44,8 @@
 		<div class="mt-2 container">
 			<div class="row">
 				<div class="col-lg-4 offset-lg-4">
-					<!--<input type="button" class="btn btn-success btn-block" value="back">-->
-					<a href="#" class="previous">back</a>
+					<input type="button" class="btn btn-success btn-block" value="back" onclick="window.location.href'result.php?keyword=<?php echo $keyword;?>'">
+					
 				</div>
 			</div>
 		</div>
