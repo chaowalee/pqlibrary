@@ -26,7 +26,7 @@ function flex_msg($keyword)
 	}
 	else if ($numrows < 1)
 	{
-		$url = "line://msg/text/?{text_message}";
+		$url = "https://nutt-i.com/psqv2";
 		$txtresult = "0 item";
 		$btn_txt = "ติดต่อผู้ดูแล";
 	}
