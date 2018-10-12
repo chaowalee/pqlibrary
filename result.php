@@ -39,7 +39,7 @@
 	$keyword = $_GET["keyword"];
 if(isset($keyword))
 {
-    $sql_search ="SELECT * FROM librarypq WHERE keyword LIKE '%".$keyword."%'";
+    $sql_search ="SELECT * FROM librarypq WHERE keyword LIKE '%".$keyword."%' OR type LIKE '%".$keyword."%'";
     $query_search = mysqli_query($conn,$sql_search);
 }
 ?>
