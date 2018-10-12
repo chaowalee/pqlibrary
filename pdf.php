@@ -44,7 +44,7 @@
 		<div class="mt-2 container">
 			<div class="row">
 				<div class="col-lg-4 offset-lg-4">
-					<input type="button" class="btn btn-success btn-block" value="back" onclick="window.location.href'result.php?keyword=<?php echo $keyword;?>'">
+					<input type="button" class="btn btn-success btn-block" value="back" onclick="window.location.href='result.php?keyword=<?php echo $keyword;?>'">
 					
 				</div>
 			</div>
