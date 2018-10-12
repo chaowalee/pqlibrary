@@ -21,13 +21,13 @@ function flex_msg($keyword)
 	else if($numrows == 1)
 	{
 		$url = "line://app/1613340720-yx1KWdPo?keyword=".$keyword;
-		$txtresult = "จำนวน ".$numrows." รายการ";
+		$txtresult = $numrows." item";
 		$btn_txt = "รายละเอียดเพิ่มเติม";
 	}
 	else if ($numrows < 1)
 	{
 		$url = "https://nutt-i.com/psqv2";
-		$txtresult = "ไม่พบข้อมูล";
+		$txtresult = "0 item";
 		$btn_txt = "ติดต่อผู้ดูแล";
 	}
 	$json1 = '{

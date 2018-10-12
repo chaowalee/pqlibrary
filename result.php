@@ -22,7 +22,6 @@
    {
     font-family: 'Mali', cursive;
    }
-
 	#container-fluid{
 						margin-bottom: 10px;
 					}
@@ -63,7 +62,7 @@ if(isset($keyword))
                         echo $a.".<br>";
                         echo "Category : ".$objsearch["keyword"]."<br>";
                         echo "Type : " .$objsearch["type"]."<br>";
-                        echo "Link : " .$objsearch["link"];
+                       
                         echo '</a>';
                         $a=$a+1;
                     }
