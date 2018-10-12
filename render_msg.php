@@ -7,7 +7,7 @@ function flex_msg($keyword)
     $password = "402bbf1f";
     $db = "heroku_821969a41e3a17e";
     $conn = new mysqli($server, $username, $password, $db);
-	
+	mysqli_query($conn, "SET NAMES utf8");
 	$sql_key_search = "SELECT * FROM librarypq WHERE keyword LIKE '%".$keyword."%' OR type LIKE '%".$keyword."%'";
 	$key_query = mysqli_query($conn,$sql_key_search);
     $numrows = mysqli_num_rows($key_query);
@@ -26,6 +26,7 @@ function flex_msg($keyword)
 	}
 	else if ($numrows < 1)
 	{
+		$url = "line://msg/text/?{text_message}";
 		$txtresult = "0 item";
 		$btn_txt = "ติดต่อผู้ดูแล";
 	}
