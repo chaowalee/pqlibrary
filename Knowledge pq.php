@@ -59,7 +59,18 @@ function reply_flex_msg($keyword,$replyToken)
 			{
 			$replyToken = $event['replyToken']; //ประกาศตัวแปร replyToken เก็บ reply token ที่ไลน์ event ส่งมาในทุกครั้งอะ เอาไว้ใสตัวแปรที่ประกาศ เพื่อเอาไว้ให้ตอบกลับ
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ที่ผ่านการตรวจสอบบรรทัดที่ 29 มาเก็บในตัวแปร $txtin
-				reply_flex_msg($txtin,$replyToken);
+			if($txtin == "keyword")
+			{
+				$sql_text = "SELECT * FROM librarypq";//select* หมายถึงเลือกทั้งตาราง 
+				$query = mysqli_query($conn,$sql_text);// ให้หาข้อมูลที่เก็บไว้ในตัวแปร $con และ $sql_text
+				while($obj = mysqli_fetch_array($query))//เป็นการคลี่ข้อมูลออกมาที่ละบรรทัดแล้วไปใส่ในตัวแปร obj
+				{
+					$allkeyword = $allkeyword."\n".$obj["keyword"];
+				}
+				reply_msg($allkeyword,$replyToken);
+				break;
+			}
+			reply_flex_msg($txtin,$replyToken);
 			
 			}
 		}
