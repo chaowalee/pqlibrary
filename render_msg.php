@@ -16,7 +16,7 @@ function flex_msg($keyword)
 	{
 		$url = "line://app/1613340720-yx1KWdPo?keyword=".$keyword;
 		$txtresult = $numrows." items";
-		$btn_txt = "รายละเอียดเพิ่มเติม";
+		$btn_txt = "Click";
 	}
 	else if($numrows == 1)
 	{
@@ -28,7 +28,7 @@ function flex_msg($keyword)
 	{
 		$url = "https://nutt-i.com/psqv2";
 		$txtresult = "0 item";
-		$btn_txt = "ติดต่อผู้ดูแล";
+		$btn_txt = "Manual";
 	}
 	$json1 = '{
 				"type":"flex",
@@ -92,7 +92,7 @@ function flex_msg($keyword)
         "height": "sm",
         "action": {
           "type": "uri",
-          "label": "Click",
+          "label": "'.$btn_txt.'",
           "uri": "'.$url.'"
         }
       },
