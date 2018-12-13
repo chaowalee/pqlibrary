@@ -26,7 +26,7 @@ function flex_msg($keyword)
 	}
 	else if ($numrows < 1)
 	{
-		$url = "https://nutt-i.com/psqv2";
+		$url = "https://drive.google.com/file/d/1Yihe0MMRmKQnEBPY3U2gxizdMHLkSqYb/preview";
 		$txtresult = "0 item";
 		$btn_txt = "Manual";
 	}
