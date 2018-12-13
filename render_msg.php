@@ -105,6 +105,18 @@ function flex_msg($keyword)
     "flex": 0
   }
 }
+	"quickReply": {
+             "items": [
+                {
+                 "type": "action",
+                 "action": {
+                    "type": "message",
+                    "label": "Keyword",
+                    "text": "Keyword"
+                   }
+                }  
+               ]
+            }
 	}';
 	$result = json_decode($json1);
 	return $result;
