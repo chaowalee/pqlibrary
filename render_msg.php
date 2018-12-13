@@ -123,6 +123,7 @@ function flex_msg($keyword)
                     "text": "PQ"
                    }
                 } ,
+				{
 				 "type": "action",
                  "action": {
                     "type": "message",
