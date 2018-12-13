@@ -22,7 +22,7 @@ function flex_msg($keyword)
 	{
 		$url = "line://app/1613340720-yx1KWdPo?keyword=".$keyword;
 		$txtresult = $numrows." item";
-		$btn_txt = "รายละเอียดเพิ่มเติม";
+		$btn_txt = "Click";
 	}
 	else if ($numrows < 1)
 	{
@@ -114,7 +114,15 @@ function flex_msg($keyword)
                     "label": "Keyword",
                     "text": "Keyword"
                    }
-                }  
+                } ,
+				{
+                 "type": "action",
+                 "action": {
+                    "type": "message",
+                    "label": "Manual",
+                    "text": "Manual"
+                   }
+                } 				
                ]
             }
 	}';
