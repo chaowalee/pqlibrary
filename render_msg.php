@@ -104,7 +104,7 @@ function flex_msg($keyword)
     ],
     "flex": 0
   }
-}
+},
 	"quickReply": {
              "items": [
                 {
