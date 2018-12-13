@@ -65,7 +65,7 @@ function reply_flex_msg($keyword,$replyToken)
 				$query = mysqli_query($conn,$sql_text);// ให้หาข้อมูลที่เก็บไว้ในตัวแปร $con และ $sql_text
 				while($obj = mysqli_fetch_array($query))//เป็นการคลี่ข้อมูลออกมาที่ละบรรทัดแล้วไปใส่ในตัวแปร obj
 				{
-					$allkeyword = $allkeyword."\n".$obj["keyword"];
+					$allkeyword = "All keywords are\n".$allkeyword."\n".$obj["keyword"];
 				}
 				reply_msg($allkeyword,$replyToken);
 				break;
