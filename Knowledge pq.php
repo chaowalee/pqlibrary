@@ -71,8 +71,6 @@ function reply_flex_msg($keyword,$replyToken)
 				break;
 			}
 			reply_flex_msg($txtin,$replyToken);
-			 
-			 
 			}
 		}
 	}
