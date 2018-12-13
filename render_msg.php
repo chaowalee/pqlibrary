@@ -119,6 +119,21 @@ function flex_msg($keyword)
                  "type": "action",
                  "action": {
                     "type": "message",
+                    "label": "PQ",
+                    "text": "PQ"
+                   }
+                } ,
+				 "type": "action",
+                 "action": {
+                    "type": "message",
+                    "label": "Voltage Dip",
+                    "text": "Voltage Dip"
+                   }
+                } ,
+				{
+                 "type": "action",
+                 "action": {
+                    "type": "message",
                     "label": "Manual",
                     "text": "Manual"
                    }
