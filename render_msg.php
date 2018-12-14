@@ -111,12 +111,20 @@ function flex_msg($keyword)
                  "type": "action",
                  "action": {
                     "type": "message",
+                    "label": "Manual",
+                    "text": "Manual"
+                   }
+                } ,
+				{
+                 "type": "action",
+                 "action": {
+                    "type": "message",
                     "label": "Keyword",
                     "text": "Keyword"
                    }
                 } ,
 				{
-                 "type": "action",
+				 "type": "action",
                  "action": {
                     "type": "message",
                     "label": "PQ",
@@ -124,21 +132,21 @@ function flex_msg($keyword)
                    }
                 } ,
 				{
-				 "type": "action",
+                 "type": "action",
                  "action": {
                     "type": "message",
                     "label": "Voltage Dip",
                     "text": "Voltage Dip"
                    }
-                } ,
-				{
+				},
+ 				{
                  "type": "action",
                  "action": {
                     "type": "message",
-                    "label": "Manual",
-                    "text": "Manual"
+                    "label": "Harmonic",
+                    "text": "Harmonic"
                    }
-                } 				
+                } 			
                ]
             }
 	}';
